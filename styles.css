@@ -1,9 +1,93 @@
+body{
+  background-image: url(images/bg.jpg);
+  
+}
+
+.topnav {
+  background-color: #333333;
+  overflow: hidden;
+  
+}
+
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  
+}
+
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.topnav a.active {
+  background-color: #f14d24;
+  color: white;
+}
+
+.container {
+  font-family: arial;
+  font-size: 24px;
+  margin: 25px;
+  padding-bottom: 25px;
+  width: auto; /*350px;*/
+  height: auto; /*200px;*/
+  outline: dashed 1px black;
+  /* Setup */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.child {
+  /* width: 50px; */
+  /* height: 50px; */
+  /* background-color: red; */
+  /* Center vertically and horizontally */
+  /* position: absolute; */
+  /* position: absolute; */
+  top: 50%;
+  left: 50%;
+  margin: 25px 0 0 -25px; /* Apply negative top and left margins to truly center the element */
+}
+
+img.avatar {
+  border-radius: 50%;
+  width: 150px;
+  height: auto;
+}
+
+.img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+img.icon {
+  vertical-align: text-bottom;
+  height: 40px; 
+  width: auto;
+}
+
+.center{
+  text-align: center;
+}
+
 table {
     border-collapse: collapse;
     border: 2px solid rgb(140 140 140);
     font-family: sans-serif;
     font-size: 0.8rem;
     letter-spacing: 1px;
+    width: 100%;
   }
    caption {
     caption-side: bottom;
@@ -32,3 +116,16 @@ table {
     font-weight: bold;
   }
  
+  .line-2 {
+    border-top: 2px dashed black;
+  }
+
+  div.boxed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 25px;
+  }
+  .upper {
+    margin-top: -25px;
+  }
