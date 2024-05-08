@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>ระบบข้อสอบอย่างง่าย Simple Quiz</title>
+   <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body onload="begin()">
+   <div class="quiz-container">
+       <div id="P01">
+            <h1></h1>
+            <p id="question">ข้อ 1. PIM ย่อมาจากอะไร ?</p>
+            <button class="button" onclick="checkAnswer01('a')">A) พีไอเอ็ม</button>
+            <button class="button" onclick="checkAnswer01('b')">B) ปิ๋ม</button>
+            <button class="button" onclick="checkAnswe01('c')">C) พิม</button>
+            <button class="button" onclick="checkAnswer01('d')">D) ภีม</button>
+            <p id="result"></p>
+            <p id="controls">
+                
+                <button class="buttonControl"  onclick="Next()">ถัดไป</button>
+            </p>
+       </div>
+       <div id="P02" >
+            <h1></h1>
+            <p id="question">วิทยาลัยอาชีวศึกษากาฬสินธ์ ตั้งอยู่จังหวัดใด ?</p>
+            <button class="button" onclick="checkAnswer02('a')">A) กรุงเทพฯ</button>
+            <button class="button" onclick="checkAnswer02('b')">B) กำแพงเพชร</button>
+            <button class="button" onclick="checkAnswer02('c')">C) กาฬสินธุ์</button>
+            <button class="button" onclick="checkAnswer02('d')">D) ขอนแก่น</button>
+            <p id="result2"></p>
+            <p id="controls">
+                <button class="buttonControl" onclick="Prev()">ย้อนกลับ</button>
+                <button class="buttonControl" onclick="summary()">สรุปผล</button>
+             </p>
+       </div>
+       <div id="P03" >
+        <h1></h1>
+        <h3>สรุปผล</h3>
+        <h4 id="result3"></h4>
+        <p id="controls">
+            <button class="buttonControl"  onclick="reset()">เริ่มใหม่</button>
+            <button class="buttonControl"  onclick="Prev02()">ย้อนกลับ</button>
+            <button class="buttonControl"  onclick="summary()">สรุปผล</button>
+         </p>
+   </div>
+       
+   </div>
+   
+</div>
+
+   <script src="index.js"></script>
+</body>
+</html>
